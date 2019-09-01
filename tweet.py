@@ -12,7 +12,7 @@ def tweet():
                     access_token_key=os.environ["ACCESS_TOKEN_KEY"],
                     access_token_secret=os.environ["ACCESS_TOKEN_SECRET"]
                     )
-  api.PostUpdate("テスト456", media="figure.png")
+  api.PostUpdate("今週のLeetcode進捗です。 #Leetcode #Bot", media="figure.png")
   return
   
 
