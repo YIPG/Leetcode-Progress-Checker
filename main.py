@@ -1,7 +1,7 @@
 import os
 import sys
 
-from login import LeetcodeManager
+from leetcode_manager import LeetcodeManager
 
 import twitter
 

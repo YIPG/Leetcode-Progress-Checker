@@ -6,21 +6,40 @@ Image is like below.
 
 <p align="center">
 <img src="https://pbs.twimg.com/media/EC4_LWPUwAAseOb?format=jpg&name=large" width="350px" />
-  </p>
-  
-# How to Use
+</p>
 
-You have to set environment variable for Twitter API and Leetcode API.
+# Requirement
 
-- USER_NAME: your leetcode id or email
-- PASSWORD: your leetcode password
-- CONSUMER_KEY: Twitter API
-- CONSUMER_SECRET: Twitter API
-- ACCESS_TOKEN_KEY: Twitter API
-- ACCESS_TOKEN_SECRET: Twitter API
+We use `pipenv` in order to manage dependencies. So first of all, Install pipenv.
 
-And then `python3 tweet.py` will tweet above image!
+Then, we have to install dependencies.
 
-# Caution
+```shell
+pipenv install
+```
 
-`index.py` is dummy code for deploying this bot to Heroku.
+Good! And you have to set Twitter API key and leetcode id/password to `.env`. It's like below one.
+
+```shell
+# Leetcode id or email
+USER_NAME=your_leetcode_id_or_email
+
+# Leetcode password
+PASSWORD=your_pass
+
+# Twitter Api
+CONSUMER_KEY=your_key
+CONSUMER_SECRET=your_key
+ACCESS_TOKEN_KEY=your_key
+ACCESS_TOKEN_SECRET=your_key
+```
+
+# How to use
+
+Enter below command and check your timeline! :)
+
+```shell
+pipenv run start
+```
+
+Enjoy leetcode life.
